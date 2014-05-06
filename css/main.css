@@ -74,16 +74,26 @@ h6 {
     color: #73A99E;
 }
 
+h2 {
+    margin: 0 0 0.83em;
+}
+
 #container {
     width: 700px;
     margin: 20px auto;
 }
 
-#logo-container {
+header {
     text-align: center;
 }
 
+nav {
+    margin: 20px 0;
+}
 
+footer {
+    margin: 20px 0 0;
+}
 
 
 
