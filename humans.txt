@@ -3,7 +3,7 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    J. Ky Marsh -- @jkymarsh
 
 # THANKS
 
@@ -19,3 +19,4 @@
     http://www.fontsquirrel.com/fonts/Good-Foot
     http://www.colourlovers.com/pattern/2709941/Little_Gifts
     http://swimchick.net/free-resources/photoshop-and-paint-shop-pro-brushes
+    http://www.elegantthemes.com/blog/resources/elegant-icon-font
