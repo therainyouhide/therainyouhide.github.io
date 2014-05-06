@@ -65,6 +65,15 @@ textarea {
     border: 1px solid red;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #73A99E;
+}
+
 #container {
     width: 700px;
     margin: 20px auto;
