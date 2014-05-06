@@ -4,5 +4,8 @@
 /* IMPORT 12 COLUMN RESPONSIVE GS */
 @import url("responsive.gs.12col.css");
 
+/* IMPORT TYPEPLATE */
+@import url("typeplate.css");
+
 /* IMPORT MAIN CSS */
 @import url("main.css");
