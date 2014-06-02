@@ -44,9 +44,9 @@
         <div id="container" class="debug">
             <header class="debug">
                 <% if (environment == "production") { %>
-                    <img src="<%= prodUri %>/img/logo.png" width="420" height="158" />
+                    <img id="logo" src="<%= prodUri %>/img/logo.png" />
                 <% } else { %>
-                    <img src="<%= devUri %>/img/logo.png" width="420" height="158" />
+                    <img id="logo" src="<%= devUri %>/img/logo.png" />
                 <% } %>
             </header>
 

@@ -3,16 +3,16 @@
 <section>
     <ul>
         <% for (var post in posts) { -%>
-            <li>
+            <li class="pad-ends border-bottom-light">
                 <h3>
                     <a href="posts/<%= post %>"><%= posts[post].artist %> - <em>"<%= posts[post].song %>"</em> (from <em>"<%= posts[post].album %>"</em>)</a>
                 </h3>
 
                 <p>
-                    <%= posts[post].author %> on <%= posts[post].timestamp %>
+                    <em>by</em> <%= posts[post].author %> <em>on</em> <%= posts[post].timestamp %>
                 </p>
 
-                <ul class="inline-list">
+                <ul class="inline-list pad-half-ends">
                     <% for (var tag in posts[post].tags) { -%>
                         <li><%= posts[post].tags[tag] %></li>
                     <% } -%>

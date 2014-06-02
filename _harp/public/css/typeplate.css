@@ -252,7 +252,7 @@ h6,
  */
 
 p {
-	margin: auto auto 1.5em; /* bottom margin for paragraphs */
+	margin: auto auto 1.0em; /* bottom margin for paragraphs */
 }
 
 p + p {

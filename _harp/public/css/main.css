@@ -188,10 +188,11 @@ textarea {
     font-style: normal;
 }
 
-.screen-reader-text { /* Reusable, toolbox kind of class */
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
+/* helper classes */
+.screen-reader-text {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
 }
 
 .debug {
@@ -228,6 +229,7 @@ a:hover {
 
 /* list styles */
 ul {
+    margin: 0;
     padding: 0;
     list-style-type: none;
 }
@@ -235,16 +237,34 @@ ul {
 .inline-list li {
     display: inline-block;
     padding: 4px;
-    background: #DBDBDB;
+    background: #EDEDED;
 }
 
+/* reusable OO-style classes */
+.pad-half-ends {
+    padding: 0.3em 0;
+}
+
+.pad-ends {
+    padding: 0.6em 0;
+}
+
+.border-bottom-light {
+    border-bottom: 1px solid #EDEDED;
+}
+
+/* specific element styles */
 #container {
-    width: 700px;
+    width: 100%;
     margin: 20px auto;
 }
 
 header {
     text-align: center;
+}
+
+#logo {
+    width: 85%;
 }
 
 nav {
@@ -268,8 +288,15 @@ footer {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media ( min-width : 768px ) {
+    #container {
+        width: 700px;
+    }
 
+    #logo {
+        width: 420px;
+        height: 158px;
+    }
 }
 
 @media print,
