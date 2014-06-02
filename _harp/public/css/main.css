@@ -8,11 +8,6 @@ textarea {
     color: #222;
 }
 
-html {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -203,6 +198,7 @@ textarea {
     border: 1px solid red;
 }
 
+/* h element styles*/
 h1,
 h2,
 h3,
@@ -210,6 +206,36 @@ h4,
 h5,
 h6 {
     color: #73A99E;
+}
+
+/* link styles */
+a:link,
+a:hover,
+a:active,
+a:visited {
+    color: #73A99E;
+}
+
+a:link,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* list styles */
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.inline-list li {
+    display: inline-block;
+    padding: 4px;
+    background: #DBDBDB;
 }
 
 #container {

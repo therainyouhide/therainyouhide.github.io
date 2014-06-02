@@ -113,6 +113,8 @@ body {
 	hyphens: auto;
 	word-wrap: break-word;
 	color: #444444;
+
+	font-family: "Crimson", "Palatino", "Hoefler Text", "Georgia", "Times New Roman", "Baskerville", serif;
 }
 
 
@@ -211,10 +213,10 @@ h2,
 
 h3,
 .gamma {
-	font-size: 36px;
-	font-size: 2rem; /* 36 / 18 = 2 */
-	margin-bottom: 0.825px;
-	margin-bottom: 0.825rem;
+	font-size: 25px;
+	font-size: 1.4rem; /* 36 / 18 = 2 */
+	margin-bottom: 12px;
+	margin-bottom: 0.725rem;
 }
 
 h4,
