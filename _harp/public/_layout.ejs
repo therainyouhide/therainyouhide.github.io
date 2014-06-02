@@ -7,17 +7,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="icon" href="favicon.ico" />
-        <!--[if IE]><link rel="shortcut icon" href="favicon.ico" /><![endif]-->
+        <% if (environment == "production") { %>
+            <p>See? Harp is in production mode.</p>
+        <% } else { %>
+            <link rel="icon" href="<%= devUri %>/favicon.ico" />
+            <!--[if IE]><link rel="shortcut icon" href="<%= devUri %>/favicon.ico" /><![endif]-->
 
-        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
+            <link rel="apple-touch-icon-precomposed" href="<%= devUri %>/apple-touch-icon-precomposed.png" />
 
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="apple-touch-icon-precomposed.png" />
+            <meta name="msapplication-TileColor" content="#ffffff" />
+            <meta name="msapplication-TileImage" content="<%= devUri %>/apple-touch-icon-precomposed.png" />
 
-        <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="<%= devUri %>/css/style.css">
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+            <script src="<%= devUri %>/js/vendor/modernizr-2.6.2.min.js"></script>
+        <% } %>
+
+        
     </head>
     <body>
         <!--[if lt IE 7]>

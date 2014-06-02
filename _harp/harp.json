@@ -2,6 +2,8 @@
     "globals": {
         "title": "J. Ky Marsh - Blog",
         "author": "J. Ky Marsh",
-        "description": "The personal blog of J. Ky Marsh"
+        "description": "The personal blog of J. Ky Marsh",
+        "devUri": "http://localhost:9000",
+        "prodUri": "http://therainyouhide.com"
     }
 }
