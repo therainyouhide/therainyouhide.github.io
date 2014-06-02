@@ -1,13 +1,25 @@
 <% var posts = public.posts._data; -%>
 
-<ul>
-    <% for (var post in public.posts._data) { -%>
-        <li>
-            <a href="posts/<%= post %>"><%= posts[post].title %></a>
-            <br>
-            <%= posts[post].date %>
-            <br>
-            <%= posts[post].description %>
-        </li>
-    <% } -%>
-</ul>
+<section>
+    <ul>
+        <% for (var post in posts) { -%>
+            <li>
+                <h3>
+                    <a href="posts/<%= post %>"><%= posts[post].artist %> - <em>"<%= posts[post].song %>"</em> (from <em>"<%= posts[post].album %>"</em>)</a>
+                </h3>
+                <p>
+                    metadata
+                </p>
+                <ul>
+                    <li>hardcore</li>
+                    <li>1999</li>
+                    <li>italy</li>
+                </ul>
+                <br>
+                <%= posts[post].date %>
+                <br>
+                <%= posts[post].description %>
+            </li>
+        <% } -%>
+    </ul>
+</section>
