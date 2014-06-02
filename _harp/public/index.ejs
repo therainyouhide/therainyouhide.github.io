@@ -7,18 +7,22 @@
                 <h3>
                     <a href="posts/<%= post %>"><%= posts[post].artist %> - <em>"<%= posts[post].song %>"</em> (from <em>"<%= posts[post].album %>"</em>)</a>
                 </h3>
+
                 <p>
-                    metadata
+                    <%= posts[post].author %> on <%= posts[post].timestamp %>
                 </p>
+
                 <ul>
-                    <li>hardcore</li>
-                    <li>1999</li>
-                    <li>italy</li>
+                    <% for (var tag in posts[post].tags) { -%>
+                        <li><%= posts[post].tags[tag] %></li>
+                    <% } -%>
                 </ul>
-                <br>
-                <%= posts[post].date %>
-                <br>
-                <%= posts[post].description %>
+
+                <ul>
+                    <li><%= posts[post].metadata.vocals.clean %>% clean</li>
+                    <li><%= posts[post].metadata.vocals.harsh %>% harsh</li>
+                    <li><%= posts[post].metadata.vocals.spoken %>% spoken</li>
+                </ul>
             </li>
         <% } -%>
     </ul>

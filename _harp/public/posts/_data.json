@@ -3,7 +3,19 @@
         "artist": "Idea of Beauty",
         "song": "Siren",
         "album": "Dark",
+        "author": "J. Ky Marsh",
         "timestamp": "06-01-2014",
-        "description": "A brief piece of text about what this post contains"
+        "tags": [
+            "metalcore",
+            2004,
+            "united states"
+        ],
+        "metadata": {
+            "vocals": {
+                "clean": 25,
+                "harsh": 75,
+                "spoken": 0
+            }
+        }
     }
 }
