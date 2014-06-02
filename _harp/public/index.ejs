@@ -1,7 +1,7 @@
 <% var posts = public.posts._data; -%>
 
 <ul>
-    <% for (var post in posts) { -%>
+    <% for (var post in public.posts._data) { -%>
         <li>
             <a href="posts/<%= post %>"><%= posts[post].title %></a>
             <br>
