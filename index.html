@@ -7,31 +7,19 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <% if (environment == "production") { %>
-            <link rel="icon" href="<%= prodUri %>/favicon.ico" />
-            <!--[if IE]><link rel="shortcut icon" href="<%= prodUri %>/favicon.ico" /><![endif]-->
+        
+            <link rel="icon" href="http://therainyouhide.com/favicon.ico" />
+            <!--[if IE]><link rel="shortcut icon" href="http://therainyouhide.com/favicon.ico" /><![endif]-->
 
-            <link rel="apple-touch-icon-precomposed" href="<%= prodUri %>/apple-touch-icon-precomposed.png" />
-
-            <meta name="msapplication-TileColor" content="#ffffff" />
-            <meta name="msapplication-TileImage" content="<%= prodUri %>/apple-touch-icon-precomposed.png" />
-
-            <link rel="stylesheet" href="<%= prodUri %>/css/style.css">
-
-            <script src="<%= prodUri %>/js/vendor/modernizr-2.6.2.min.js"></script>
-        <% } else { %>
-            <link rel="icon" href="<%= devUri %>/favicon.ico" />
-            <!--[if IE]><link rel="shortcut icon" href="<%= devUri %>/favicon.ico" /><![endif]-->
-
-            <link rel="apple-touch-icon-precomposed" href="<%= devUri %>/apple-touch-icon-precomposed.png" />
+            <link rel="apple-touch-icon-precomposed" href="http://therainyouhide.com/apple-touch-icon-precomposed.png" />
 
             <meta name="msapplication-TileColor" content="#ffffff" />
-            <meta name="msapplication-TileImage" content="<%= devUri %>/apple-touch-icon-precomposed.png" />
+            <meta name="msapplication-TileImage" content="http://therainyouhide.com/apple-touch-icon-precomposed.png" />
 
-            <link rel="stylesheet" href="<%= devUri %>/css/style.css">
+            <link rel="stylesheet" href="http://therainyouhide.com/css/style.css">
 
-            <script src="<%= devUri %>/js/vendor/modernizr-2.6.2.min.js"></script>
-        <% } %>
+            <script src="http://therainyouhide.com/js/vendor/modernizr-2.6.2.min.js"></script>
+        
 
     </head>
     <body>
@@ -41,11 +29,9 @@
 
         <div id="container" class="debug">
             <header class="debug">
-                <% if (environment == "production") { %>
-                    <img src="<%= prodUri %>/img/logo.png" width="420" height="158" />
-                <% } else { %>
-                    <img src="<%= devUri %>/img/logo.png" width="420" height="158" />
-                <% } %>
+                
+                    <img src="http://therainyouhide.com/img/logo.png" width="420" height="158" />
+                
             </header>
 
             <nav class="clearfix">
@@ -95,7 +81,23 @@
 
             <div class="row gutters">
                 <main id="main" role="main" class="col span_8 debug">
-                    <%- yield %>
+                    
+<ul>
+            <li>
+            <a href="posts/fake-post">A Good Article</a>
+            <br>
+            3-5-14
+            <br>
+            A brief piece of text about what this post contains
+        </li>
+            <li>
+            <a href="posts/another-fake-post">Another Article</a>
+            <br>
+            3-4-14
+            <br>
+            Another brief piece of text about what this post contains
+        </li>
+    </ul>
                 </main>
 
                 <aside id="sidebar" class="col span_4 debug">
@@ -118,10 +120,8 @@
             </footer>
         </div>
 
-        <% if (environment == "production") { %>
-            <script src="<%= prodUri %>/js/main.js"></script>
-        <% } else { %>
-            <script src="<%= devUri %>/js/main.js"></script>
-        <% } %>
+        
+            <script src="http://therainyouhide.com/js/main.js"></script>
+        
     </body>
 </html>

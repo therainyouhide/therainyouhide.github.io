@@ -1,0 +1,23 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    J. Ky Marsh -- @jkymarsh
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+
+# DESIGN RESOURCES
+
+    http://www.fontsquirrel.com/fonts/Good-Foot
+    http://www.colourlovers.com/pattern/2709941/Little_Gifts
+    http://swimchick.net/free-resources/photoshop-and-paint-shop-pro-brushes
+    http://www.elegantthemes.com/blog/resources/elegant-icon-font
+    http://awesome-fontstacks.com/
