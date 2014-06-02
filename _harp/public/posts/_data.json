@@ -1,0 +1,12 @@
+{
+    "fake-post": {
+        "title": "A Good Article",
+        "date": "3-5-14",
+        "description": "A brief piece of text about what this post contains"
+    },
+    "another-fake-post": {
+        "title": "Another Article",
+        "date": "3-4-14",
+        "description": "Another brief piece of text about what this post contains"
+    }
+}

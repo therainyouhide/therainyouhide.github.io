@@ -1,13 +1,13 @@
-<% var blogs = public._data; -%>
+<% var posts = public.posts._data; -%>
 
 <ul>
-    <% for (var blog in blogs) { -%>
+    <% for (var post in posts) { -%>
         <li>
-            <a href="<%= blog %>"><%= blogs[blog].title %></a>
+            <a href="posts/<%= post %>"><%= posts[post].title %></a>
             <br>
-            <%= blogs[blog].date %>
+            <%= posts[post].date %>
             <br>
-            <%= blogs[blog].description %>
+            <%= posts[post].description %>
         </li>
     <% } -%>
 </ul>
