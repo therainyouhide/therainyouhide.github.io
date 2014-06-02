@@ -9,7 +9,7 @@
 
         <!-- TODO: could use <base> tag? -->
 
-        <% if (environment == "production") { %>
+        <% if (environment === "production") { %>
             <link rel="icon" href="<%= prodUri %>/favicon.ico" />
             <!--[if IE]><link rel="shortcut icon" href="<%= prodUri %>/favicon.ico" /><![endif]-->
 
@@ -43,27 +43,37 @@
 
         <div id="container" class="debug">
             <header class="debug">
-                <% if (environment == "production") { %>
+                <% if (environment === "production") { %>
                     <img id="logo" src="<%= prodUri %>/img/logo.png" />
                 <% } else { %>
                     <img id="logo" src="<%= devUri %>/img/logo.png" />
                 <% } %>
             </header>
 
-            <nav class="clearfix">
-                <h2>
-                    <span aria-hidden="true" data-icon="&#xe074;"></span>
-                    Home
-                </h2>
+            <nav class="clearfix debug">
+                <ul class="inline-list">
+                    <li class="space-right">
+                        <a href="/">
+                            <span aria-hidden="true" data-icon="&#xe074;"></span>
+                            Home
+                        </a>
+                    </li>
+                    <li class="space-right">
+                        <a href="/">
+                            <span aria-hidden="true" data-icon="&#xe05a;"></span>
+                            Submit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <span aria-hidden="true" data-icon="&#xe064;"></span>
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-                <a href="#rss" class="icon-alone">
-                    <span aria-hidden="true" data-icon="&#xe074;"></span>
-
-                    <span class="screen-reader-text">RSS</span>
-                </a>
-
-                <br /><br />
-
+            <div class="debug">
                 <span class="afs-crimson">crimson text</span><br />
                 <em class="afs-crimson">crimson text</em><br />
                 <strong class="afs-crimson">crimson text</strong>
@@ -92,8 +102,7 @@
                 <span>default text</span><br />
                 <em>default text</em><br />
                 <strong>default text</strong>
-                <br />
-            </nav>
+            </div>
 
             <div class="row gutters">
                 <main id="main" role="main" class="col span_8 debug">
@@ -120,7 +129,7 @@
             </footer>
         </div>
 
-        <% if (environment == "production") { %>
+        <% if (environment === "production") { %>
             <script src="<%= prodUri %>/js/main.js"></script>
         <% } else { %>
             <script src="<%= devUri %>/js/main.js"></script>

@@ -81,8 +81,7 @@ textarea {
 }
 
 .icon-alone {
-    /* display: inline-block; */ /* Fix for clickability issue in WebKit */
-    display: block;
+    display: inline-block;
 }
 
 .afs-pt-sans {
@@ -234,9 +233,12 @@ ul {
     list-style-type: none;
 }
 
-.inline-list li {
+.inline-list li, .tag-list li {
     display: inline-block;
     padding: 4px;
+}
+
+.tag-list li {
     background: #EDEDED;
 }
 
@@ -247,6 +249,14 @@ ul {
 
 .pad-ends {
     padding: 0.6em 0;
+}
+
+.space-half-right {
+    margin: 0 0.3em 0 0;
+}
+
+.space-right {
+    margin: 0 0.6em 0 0;
 }
 
 .border-bottom-light {
@@ -265,10 +275,6 @@ header {
 
 #logo {
     width: 85%;
-}
-
-nav {
-    margin: 20px 0;
 }
 
 footer {

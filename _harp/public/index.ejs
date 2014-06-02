@@ -12,13 +12,31 @@
                     <em>by</em> <%= posts[post].author %> <em>on</em> <%= posts[post].timestamp %>
                 </p>
 
-                <ul class="inline-list pad-half-ends">
-                    <% for (var tag in posts[post].tags) { -%>
-                        <li><%= posts[post].tags[tag] %></li>
-                    <% } -%>
+                <ul class="tag-list pad-half-ends">
+                    <% for (var i = 0; i < posts[post].tags.length; i++) { %>
+                        <li>
+                            <span href="#rss" class="icon-alone space-half-right">
+                                <% if (i === 0) { %>
+                                    <span aria-hidden="true" data-icon="&#xe08e;"></span>
+
+                                    <span class="screen-reader-text">genre</span>
+                                <% } else if (i === 1) { %>
+                                    <span aria-hidden="true" data-icon="&#xe06b;"></span>
+
+                                    <span class="screen-reader-text">year</span>
+                                <% } else if (i === 2) { %>
+                                    <span aria-hidden="true" data-icon="&#xe0de;"></span>
+
+                                    <span class="screen-reader-text">country</span>
+                                <% } %>
+                            </span>
+
+                            <span><%= posts[post].tags[i] %></span>
+                        </li>
+                    <% } %>
                 </ul>
 
-                <ul class="inline-list">
+                <ul class="tag-list">
                     <li><%= posts[post].metadata.vocals.clean %>% clean</li>
                     <li><%= posts[post].metadata.vocals.harsh %>% harsh</li>
                     <li><%= posts[post].metadata.vocals.spoken %>% spoken</li>
