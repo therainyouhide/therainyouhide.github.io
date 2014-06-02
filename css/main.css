@@ -87,7 +87,7 @@ textarea {
 
 .icon-alone {
     /* display: inline-block; */ /* Fix for clickability issue in WebKit */
-    display: block; /* Fix for clickability issue in WebKit */
+    display: block;
 }
 
 .afs-pt-sans {
@@ -171,45 +171,26 @@ textarea {
     font-style: normal;
 }
 
-
-
-
-
-
-
 @font-face {
-font-family: 'TeX Gyre Cursor';
-src: url('/fonts/texgyrecursor-bold-webfont.eot');
-src: local('☺'), url('/fonts/texgyrecursor-bold-webfont.woff') format('woff'), url('/fonts/texgyrecursor-bold-webfont.ttf') format('truetype'), url('/fonts/texgyrecursor-bold-webfont.svg#webfontX4pGz9fc') format('svg');
-font-weight: 700;
-font-style: normal;
+    font-family: 'TeX Gyre Cursor';
+    src: url('fonts/texgyrecursor-bold-webfont.eot');
+    src: local('☺'),
+            url('fonts/texgyrecursor-bold-webfont.woff') format('woff'),
+            url('fonts/texgyrecursor-bold-webfont.ttf') format('truetype'),
+            url('fonts/texgyrecursor-bold-webfont.svg#webfontX4pGz9fc') format('svg');
+    font-weight: 700;
+    font-style: normal;
 }
 
-
 @font-face {
-font-family: 'TeX Gyre Cursor';
-src: url('/fonts/texgyrecursor-bolditalic-webfont.eot');
-src: local('☺'), url('/fonts/texgyrecursor-bolditalic-webfont.woff') format('woff'), url('/fonts/texgyrecursor-bolditalic-webfont.ttf') format('truetype'), url('/fonts/texgyrecursor-bolditalic-webfont.svg#webfontX4pGz9fc') format('svg');
-font-weight: 700;
-font-style: italic;
-}
-
-
-@font-face {
-font-family: 'TeX Gyre Cursor';
-src: url('/fonts/texgyrecursor-italic-webfont.eot');
-src: local('☺'), url('/fonts/texgyrecursor-italic-webfont.woff') format('woff'), url('/fonts/texgyrecursor-italic-webfont.ttf') format('truetype'), url('/fonts/texgyrecursor-italic-webfont.svg#webfontX4pGz9fc') format('svg');
-font-weight: 400;
-font-style: italic;
-}
-
-
-@font-face {
-font-family: 'TeX Gyre Cursor';
-src: url('/fonts/texgyrecursor-regular-webfont.eot');
-src: local('☺'), url('/fonts/texgyrecursor-regular-webfont.woff') format('woff'), url('/fonts/texgyrecursor-regular-webfont.ttf') format('truetype'), url('/fonts/texgyrecursor-regular-webfont.svg#webfontX4pGz9fc') format('svg');
-font-weight: 400;
-font-style: normal;
+    font-family: 'TeX Gyre Cursor';
+    src: url('fonts/texgyrecursor-regular-webfont.eot');
+    src: local('☺'),
+            url('fonts/texgyrecursor-regular-webfont.woff') format('woff'),
+            url('fonts/texgyrecursor-regular-webfont.ttf') format('truetype'),
+            url('fonts/texgyrecursor-regular-webfont.svg#webfontX4pGz9fc') format('svg');
+    font-weight: 400;
+    font-style: normal;
 }
 
 .screen-reader-text { /* Reusable, toolbox kind of class */
