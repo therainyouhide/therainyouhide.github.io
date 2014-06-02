@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title><%= title %></title>
+
+        <meta name="description" content="<%= description %>">
+        <meta name="author" content="<%= author %>">
+
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/responsive.gs.12col.css">
+        <link rel="stylesheet" href="css/typeplate.css">
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/libs/modernizr-2.6.2.min.js"></script>
+        <script src="js/libs/respond.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+            <header role="banner" class="row">
+                <%- partial("_partials/_header") -%>
+            </header>
+    
+            <main role="main" class="row">
+                <%- yield -%>
+            </main>
+            
+            <footer role="contentinfo" class="row">
+                <%- partial("_partials/_footer") -%>
+            </footer>
+        </div>
+    </body>
+
+    <!-- <article class="col span_8 clr">
+        <span style="float: left;">Insert page content here.</span>
+    </article>
+
+    <aside role="complementary" class="col span_4 clr">
+        Insert sidebar stuff here.
+    </aside> -->
+</html>

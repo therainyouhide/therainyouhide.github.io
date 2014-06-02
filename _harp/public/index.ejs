@@ -1,0 +1,13 @@
+<% var blogs = public._data; -%>
+
+<ul>
+    <% for (var blog in blogs) { -%>
+        <li>
+            <a href="<%= blog %>"><%= blogs[blog].title %></a>
+            <br>
+            <%= blogs[blog].date %>
+            <br>
+            <%= blogs[blog].description %>
+        </li>
+    <% } -%>
+</ul>
