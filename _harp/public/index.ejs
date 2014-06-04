@@ -1,6 +1,14 @@
 <% var posts = public.posts._data; -%>
 
-<section>
+<section class="space-double-bottom debug">
+    <label for="metadata-search">
+        enter a search
+    </label>
+
+    <input type="text" id="metadata-search" class="full-width" placeholder="search for a genre, year, or country" />
+</section>
+
+<section class="debug">
     <ul>
         <% for (var post in posts) { -%>
             <li class="pad-bottom border-bottom-light">

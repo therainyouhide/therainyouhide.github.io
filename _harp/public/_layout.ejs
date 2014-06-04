@@ -42,7 +42,7 @@
         <![endif]-->
 
         <div id="container" class="debug">
-            <header class="debug">
+            <header class="space-double-bottom debug">
                 <% if (environment === "production") { %>
                     <img id="logo" src="<%= prodUri %>/img/logo.png" />
                 <% } else { %>
@@ -50,7 +50,7 @@
                 <% } %>
             </header>
 
-            <nav class="space-double-bottom debug">
+            <nav class="space-double-bottom border-ends-light pad-half-top">
                 <ul class="inline-list">
                     <li class="space-right">
                         <a href="/">
@@ -80,7 +80,7 @@
             </nav>
 
             <div class="row gutters debug">
-                <main id="main" role="main" class="col span_8 debug">
+                <main id="main" role="main" class="col span_8 space-double-bottom debug">
                     <%- yield %>
                 </main>
 

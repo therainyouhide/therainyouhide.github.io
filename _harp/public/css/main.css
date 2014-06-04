@@ -242,9 +242,29 @@ ul {
     background: #EDEDED;
 }
 
+/* form elements */
+label {
+    display: block;
+    font-size: 0.6em;
+}
+
 /* reusable OO-style classes */
 
+/* display */
+.block {
+    display: block;
+}
+
+/* metrics */
+.full-width {
+    width: 100%;
+}
+
 /* padding */
+.pad-half-top {
+    padding: 0.3em 0 0;
+}
+
 .pad-half-ends {
     padding: 0.3em 0;
 }
@@ -275,6 +295,11 @@ ul {
 }
 
 /* borders */
+.border-ends-light {
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+}
+
 .border-bottom-light {
     border-bottom: 1px solid #EDEDED;
 }
