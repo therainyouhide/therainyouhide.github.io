@@ -270,6 +270,10 @@ ul {
     margin: 0 0 0.6em;
 }
 
+.space-double-bottom {
+    margin: 0 0 1.2em;
+}
+
 /* borders */
 .border-bottom-light {
     border-bottom: 1px solid #EDEDED;

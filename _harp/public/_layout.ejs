@@ -50,7 +50,7 @@
                 <% } %>
             </header>
 
-            <nav class="clearfix debug">
+            <nav class="space-double-bottom debug">
                 <ul class="inline-list">
                     <li class="space-right">
                         <a href="/">
@@ -64,47 +64,22 @@
                             Submit
                         </a>
                     </li>
-                    <li>
+                    <li class="space-right">
                         <a href="/about">
                             <span aria-hidden="true" data-icon="&#xe064;"></span>
                             About
                         </a>
                     </li>
+                    <li>
+                        <a href="/font-test">
+                            <span aria-hidden="true" data-icon="&#xe064;"></span>
+                            Font Test
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
-            <div class="debug">
-                <span class="afs-crimson">crimson text</span><br />
-                <em class="afs-crimson">crimson text</em><br />
-                <strong class="afs-crimson">crimson text</strong>
-
-                <br /><br />
-
-                <span class="afs-pt-sans">pt sans text</span><br />
-                <em class="afs-pt-sans">pt sans text</em><br />
-                <strong class="afs-pt-sans">pt sans text</strong>
-
-                <br /><br />
-
-                <span class="afs-tex-gyre-cursor">tex gyre text</span><br />
-                <strong class="afs-tex-gyre-cursor">tex gyre text</strong>
-
-                <!--
-                <br /><br />
-
-                <span class="afs-tex-gyre-cursor">tex gyre cursor text</span>
-                <br />
-                <span>default text</span>
-                -->
-
-                <br /><br />
-
-                <span>default text</span><br />
-                <em>default text</em><br />
-                <strong>default text</strong>
-            </div>
-
-            <div class="row gutters">
+            <div class="row gutters debug">
                 <main id="main" role="main" class="col span_8 debug">
                     <%- yield %>
                 </main>
@@ -131,6 +106,8 @@
                             </li>
                         </ul>
                     </section>
+
+                    <h4>More Links</h4>
 
                     <section>
                         some sidebar content
